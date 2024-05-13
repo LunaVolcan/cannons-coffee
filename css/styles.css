@@ -4,24 +4,29 @@
   --style-color: #ffffff;
   --font:"Poppins", sans-serif;
 }
+
 body {
   font-family: var(--font);
   font-size: 1.125rem;
   line-height: 1.5;
   background-color: var(--main-color);
 }
+
 .body-container {
   max-width: 1200px;
   padding: 2rem;
   margin: 0 auto;
 }
+
 .img {
   max-width: 100%;
 }
+
 header {
   background: var(--main-color);
   border-bottom: 1rem solid #ffd034;
 }
+
  nav ul {
     display: flex;
     justify-content: center;
@@ -29,6 +34,7 @@ header {
     list-style: none;
     padding: 0;
   }
+
 nav {
   font-family: var(--font);
   font-size: 1.3rem;
@@ -37,15 +43,18 @@ nav {
   font-weight: normal;
   padding-bottom: rem;
 }
+
 nav a {
   text-decoration: none;
   font-size: 1.3rem;
   color: var(--style-color);
 }
+
    .logo {
     display: flex;
     justify-content: center;
   }
+
 h1 {
   font-family: var(--font);
   font-size: 3rem;
@@ -57,6 +66,7 @@ h1 {
   padding-left: 0.5rem;
   padding-top: 1.1rem;
 }
+
 h2 {
   font-family: var(--font);
   font-size: 2.5rem;
@@ -64,12 +74,14 @@ h2 {
   text-transform: uppercase;
   font-weight: normal;
 }
+
 h3 {
    font-family: var(--font);
   font-size: 1.75rem;
   line-height: 1.1667;
   font-weight: normal;
 }
+
 a {
   border: none;
   border-radius: 10px;
@@ -84,29 +96,35 @@ a {
   font-weight: normal;
   letter-spacing: 1px;
 }
+
 .button1 {
   background-color: #04aa6d;
 }
+
 .button {
   background-color: var(--main-color);
 }
+
 .opening {
   background: var(--style-color);
    display: grid;
    grid-template-columns: 1fr 1fr; 
 }
+
 .opening img {
-  width: 80%;
-/*   padding: 4rem 2rem; */
+  width: 95%;
 } 
+
  section {
     background:  #cadbf8;
 }
+
 .grid-container img {
     border-radius: 20px;
     margin: 1.5rem;
     max-width: 90%;
   }
+
 footer {
     background: var(--main-color);
     border-top: 1rem solid #ffd034;
@@ -114,50 +132,81 @@ footer {
    padding: 2rem;
    text-align: center;
  }
+
 @media (max-width: 649px) {
  .opening img {
     padding: 3rem 2rem;
+    width: 85%;
   }
+
   .grid-container {
     background: #cadbf8;
   }
+
    .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .grid-container h2 {
    padding-left: 2rem;
    padding-top: 2rem;
   }
+
   .grid-container h3 {
     padding-left: 1rem;
    padding-top: 3rem;
   }
+
   .grid-container p {
     padding-left: 2.2rem;
   }
+
   section {
     padding: 1.5rem;
   }
 }
 @media (min-width: 650px) {
-  .grid-container {
+ .grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap:15px;
     padding: 1.5rem;
   }
+
   section {
     padding: 1.5rem
   }
 }
+
 @media (min-width: 1000px) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 3rem;
+  }
+    .logo { 
+      margin-bottom: 1rem;
+    }
+
+  nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: 4.5rem;
+  }
+
+  .coffee h2  {
+    margin-top: 15rem;
+      }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap:15px;
   }
-}
+  }
