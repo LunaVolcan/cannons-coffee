@@ -42,7 +42,8 @@ nav {
   text-transform: uppercase;
   font-weight: normal;
   padding-bottom: rem;
-}
+/*   display: none; */
+} 
 
 nav a {
   text-decoration: none;
@@ -133,6 +134,59 @@ footer {
    text-align: center;
  }
 
+@media (min-width: 1000px) {
+
+  header {
+    display: flex; 
+    justify-content: space-around;
+    padding-right: 3rem;
+  }
+    .logo { 
+      margin-bottom: 1rem;
+    }
+
+  nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: 4.5rem;
+  }
+
+  .coffee h2  {
+    margin-top: 15rem;
+      }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+  }
+ 
+  .burger {
+    display: none;
+  }
+  
+  }
+
+@media (min-width: 650px) {
+ .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    padding: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem
+  }
+  
+  .burger {
+    display: none;
+  }
+}
+
 @media (max-width: 649px) {
  .opening img {
     padding: 3rem 2rem;
@@ -166,47 +220,40 @@ footer {
   section {
     padding: 1.5rem;
   }
+ 
+  .mobile-menu-wrapper {
+  display: flex;
+} 
+
+.bar-nav {
+/*     margin: 0; */
+    background: #06327C;
+    position: absolute; 
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0; 
+    transition: all 400ms;
+    top: 100px;
+    text-align: center;
+   }
+
+.nav-active {
+  right: 0;
+  }
+ 
+.btn {
+  display: flex;
+  justify-content: end; 
+  }
+
+  .burger {
+   background:  #06327C;
+   border: 1px solid #ffffff;
+   color: #ffffff;
+   padding:  .7rem;
+  }
 }
-@media (min-width: 650px) {
- .grid-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap:15px;
-    padding: 1.5rem;
-  }
 
-  section {
-    padding: 1.5rem
-  }
-}
-
-@media (min-width: 1000px) {
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-right: 3rem;
-  }
-    .logo { 
-      margin-bottom: 1rem;
-    }
-
-  nav ul {
-    display: flex;
-    justify-content: end;
-    list-style: none;
-    margin-top: 4.5rem;
-  }
-
-  .coffee h2  {
-    margin-top: 15rem;
-      }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap:15px;
-  }
-  }

@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cannon's Coffee</title>
-  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 
 <body>
   <div class="body-container">
     <header>
+      <div class="btn">
+        <button onclick="showHamburger()" class="burger">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
       <div class="logo">
         <p><a href=""><img src="https://assets.codepen.io/296057/logo-nav.png" alt="Creative Space. Click for home." class="logo" /></a></p>
         <h1>Cannons Coffee</h1>
       </div>
-      <nav>
-
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="latte.html">Coffee</a></li>
-          <li><a href="https://www.zendocoffee.com/" target="_blank">About</a></li>
-          <li><a href="mailto:luna@anniecannons.com" target="_blank">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="mobile-menu-wrapper">
+        <nav>
+          <ul class="bar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latte.html">Coffee</a></li>
+            <li><a href="https://www.zendocoffee.com/" target="_blank">About</a></li>
+            <li><a href="mailto:luna@anniecannons.com" target="_blank">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
     </header>
     <div class="opening">
       <img src="https://assets.codepen.io/296057/coffee-computer.jpg" alt="mug of latte sitting next to a class of water and a laptop on a wooden desk" class="img">
       <div class="coffee">
         <h2>Coffee and Code</h2>
-        <p> Join us at Cannons Coffee for  a pick-me-up and plenty of  code assistance and support  at our coding cafe! </p>
+        <p> Join us at Cannons Coffee for a pick-me-up and plenty of code assistance and support at our coding cafe! </p>
         <p><a href="" target="_blank" class="button1">Reserve A Table</a></p>
       </div>
     </div>
     <section class="items">
-    <h2>Our Coffee</h2>
-    <div class="grid-container">
-       <div class="card card1">
-        <h3>Latte</h3>
-        <img src="https://assets.codepen.io/296057/latte.jpg" alt="A barista holding a cup of latte and pouring latte art" class="img">
-        <p>Hot or cold, with dairy or oat milk, your favorite is available anytime!</p>
-        <p><a href="latte.html" target="_blank" class="button">Order Latte</a></p>
-      </div>
+      <h2>Our Coffee</h2>
+      <div class="grid-container">
+        <div class="card card1">
+          <h3>Latte</h3>
+          <img src="https://assets.codepen.io/296057/latte.jpg" alt="A barista holding a cup of latte and pouring latte art" class="img">
+          <p>Hot or cold, with dairy or oat milk, your favorite is available anytime!</p>
+          <p><a href="latte.html" target="_blank" class="button">Order Latte</a></p>
+        </div>
         <div class="card card2">
           <h3>Coffee</h3>
           <img src="https://assets.codepen.io/296057/coffee.jpg" alt="a photo of a cup of coffee take from above, sitting on a white table" class="img">
@@ -60,13 +69,14 @@
           <p>Perfect for hot summer days, our iced coffee is made with just enough sweetness to cool down your day. </p>
           <p><a href="" target="_blank" class="button">Order Iced</a></p>
         </div>
-    </div>
-      <section>
       </div>
-    <footer>
-      <img src="https://assets.codepen.io/296057/logo-footer.png" class="footer.logo" alt="Cannons Coffee logo">
-      <p>&copy; 2024 Cannons Coffee. All rights reserved</p>
-    </footer>
+      <section>
+  </div>
+  <footer>
+    <img src="https://assets.codepen.io/296057/logo-footer.png" class="footer.logo" alt="Cannons Coffee logo">
+    <p>&copy; 2024 Cannons Coffee. All rights reserved</p>
+  </footer>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
