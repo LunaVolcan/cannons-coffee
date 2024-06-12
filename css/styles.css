@@ -42,7 +42,6 @@ nav {
   text-transform: uppercase;
   font-weight: normal;
   padding-bottom: rem;
-/*   display: none; */
 } 
 
 nav a {
@@ -98,6 +97,7 @@ a {
   letter-spacing: 1px;
 }
 
+
 .button1 {
   background-color: #04aa6d;
 }
@@ -116,7 +116,7 @@ a {
   width: 95%;
 } 
 
- section {
+ section, items {
     background:  #cadbf8;
 }
 
@@ -256,4 +256,90 @@ footer {
    padding:  .7rem;
   }
 }
+
+.contact-page {
+  text-align: center;
+  font-family: var(--font);
+  color: var(--style-color);
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+ .form-wrapper {
+/*    border: 2px solid red; */
+  font-family: var(--font);
+  background: #FFFFFF;
+	height: 500px;
+  width: 360px;
+  margin: auto;
+  border-radius: 10px;
+} 
+
+form {
+/*   border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.5rem 2rem 0 2rem;
+  
+}
+
+.form-group {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.required {
+  color: var(--main-color);
+  font-family: var(--font);
+  font-size: x-small;
+}
+
+.contact {
+  background: var(--main-color);
+  margin-bottom: 5rem;
+}
+
+label {
+/*   border: solid 1px black; */
+	color: var(--main-color);
+  font-family: var(--font);
+  padding-right: 1rem;
+}
+
+input[type="text"], input[type="email"] {
+	border: var(--main-color) 1.5px solid;
+	margin-bottom: 0.5rem;
+	padding: 0.2rem;
+	height: 1.2rem;
+	width: 190px;
+}
+
+.checkbox-group {
+/* 		border: solid 1px black; */
+  margin-top: .5rem;
+	margin-bottom: 1rem;
+}
+
+.comment-box {
+/*   border: solid 1px black; */
+  margin-bottom: 2rem;
+ }
+
+textarea {
+  border: var(--main-color) 1.5px solid;
+  width: 100%;
+}
+
+
+button, submit { 
+  border-radius: 10px;
+  width: 5rem;
+  margin: auto;
+  padding: .7rem;
+  background: var(--main-color);
+  color: #FFFFFF;
+}
+ 
+
 
