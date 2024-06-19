@@ -97,6 +97,14 @@ a {
   letter-spacing: 1px;
 }
 
+ .submit { 
+  border-radius: 10px;
+  width: 5rem;
+  margin: auto;
+  padding: .7rem;
+  background: var(--main-color);
+  color: #FFFFFF;
+}
 
 .button1 {
   background-color: #04aa6d;
@@ -251,10 +259,18 @@ footer {
 
   .burger {
    background:  #06327C;
-   border: 1px solid #ffffff;
    color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
    padding:  .7rem;
+   transition: .5s;
   }
+
+.burger:hover {
+  background-color: #ffffff;
+  color: var(--main-color);
+}
+
 }
 
 .contact-page {
@@ -332,14 +348,7 @@ textarea {
 }
 
 
-button, submit { 
-  border-radius: 10px;
-  width: 5rem;
-  margin: auto;
-  padding: .7rem;
-  background: var(--main-color);
-  color: #FFFFFF;
-}
+
  
 
 
