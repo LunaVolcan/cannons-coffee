@@ -120,8 +120,11 @@ a {
    grid-template-columns: 1fr 1fr; 
 }
 
+
+
 .opening img {
-  width: 95%;
+  width: 95%\;
+
 } 
 
  section, items {
@@ -246,7 +249,30 @@ footer {
     transition: all 400ms;
     top: 100px;
     text-align: center;
+  
    }
+
+   nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav {
+    font-family: var(--font);
+    font-size: 1.3rem;
+    line-height: 1.1667;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: rem;
+  } 
+
+  .bar-nav.active {
+    display: flex;
+    right: 0;
+  }
 
 .nav-active {
   right: 0;
